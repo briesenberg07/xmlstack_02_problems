@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<results xmlns="https://briesenberg07.github.io/xml_stack/"
+         xmlns:mapstor="https://uwlib-cams.github.io/map_storage/xsd/"
+         xmlns:math="http://www.w3.org/2005/xpath-functions/math"
+         xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+         xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+         xmlns:reg="http://metadataregistry.org/uri/profile/regap/"
+         xmlns:sinopia="http://sinopia.io/vocabulary/"
+         xmlns:xs="http://www.w3.org/2001/XMLSchema">
+   <set set_name="rdaw_p10k">
+      <sinopia:hasPropertyUri rdf:resource="http://rdaregistry.info/Elements/w/P10307"/>
+      <sinopia:hasPropertyUri rdf:resource="http://rdaregistry.info/Elements/w/P10311"/>
+      <sinopia:hasPropertyUri rdf:resource="http://rdaregistry.info/Elements/w/P10311"/>
+      <sinopia:hasPropertyUri rdf:resource="http://rdaregistry.info/Elements/w/P10316"/>
+      <sinopia:hasPropertyUri rdf:resource="http://rdaregistry.info/Elements/w/P10316"/>
+      <sinopia:hasPropertyUri rdf:resource="http://rdaregistry.info/Elements/w/P10317"/>
+      <sinopia:hasPropertyUri rdf:resource="http://rdaregistry.info/Elements/w/P10317"/>
+      <sinopia:hasPropertyUri rdf:resource="http://rdaregistry.info/Elements/w/P10308"/>
+      <sinopia:hasPropertyUri rdf:resource="http://rdaregistry.info/Elements/w/P10308"/>
+      <sinopia:hasPropertyUri rdf:resource="http://rdaregistry.info/Elements/w/P10309"/>
+      <sinopia:hasPropertyUri rdf:resource="http://rdaregistry.info/Elements/w/P10309"/>
+      <sinopia:hasPropertyUri rdf:resource="http://rdaregistry.info/Elements/w/P10318"/>
+      <sinopia:hasPropertyUri rdf:resource="http://rdaregistry.info/Elements/w/P10318"/>
+      <sinopia:hasPropertyUri rdf:resource="http://rdaregistry.info/Elements/w/P10310"/>
+      <sinopia:hasPropertyUri rdf:resource="http://rdaregistry.info/Elements/w/P10310"/>
+      <sinopia:hasPropertyUri rdf:resource="http://rdaregistry.info/Elements/w/P10198"/>
+      <sinopia:hasPropertyUri rdf:resource="http://rdaregistry.info/Elements/w/P10198"/>
+      <sinopia:hasPropertyUri rdf:resource="http://rdaregistry.info/Elements/w/P10324"/>
+      <sinopia:hasPropertyUri rdf:resource="http://rdaregistry.info/Elements/w/P10324"/>
+   </set>
+   <set set_name="rdae_p20k">
+      <sinopia:hasPropertyUri rdf:resource="http://rdaregistry.info/Elements/e/P20333"/>
+      <sinopia:hasPropertyUri rdf:resource="http://rdaregistry.info/Elements/e/P20297"/>
+      <sinopia:hasPropertyUri rdf:resource="http://rdaregistry.info/Elements/e/P20297"/>
+   </set>
+   <set set_name="rdam_p30k">
+      <sinopia:hasPropertyUri rdf:resource="http://rdaregistry.info/Elements/m/P30330"/>
+      <sinopia:hasPropertyUri rdf:resource="http://rdaregistry.info/Elements/m/P30264"/>
+      <sinopia:hasPropertyUri rdf:resource="http://rdaregistry.info/Elements/m/P30264"/>
+   </set>
+   <set set_name="rdai_p40k">
+      <sinopia:hasPropertyUri rdf:resource="http://rdaregistry.info/Elements/i/P40095"/>
+      <sinopia:hasPropertyUri rdf:resource="http://rdaregistry.info/Elements/i/P40068"/>
+      <sinopia:hasPropertyUri rdf:resource="http://rdaregistry.info/Elements/i/P40068"/>
+   </set>
+   <set set_name="rdaa_p50k">
+      <sinopia:hasPropertyUri rdf:resource="http://rdaregistry.info/Elements/a/P50304"/>
+      <sinopia:hasPropertyUri rdf:resource="http://rdaregistry.info/Elements/a/P50309"/>
+      <sinopia:hasPropertyUri rdf:resource="http://rdaregistry.info/Elements/a/P50309"/>
+      <sinopia:hasPropertyUri rdf:resource="http://rdaregistry.info/Elements/a/P50338"/>
+      <sinopia:hasPropertyUri rdf:resource="http://rdaregistry.info/Elements/a/P50338"/>
+      <sinopia:hasPropertyUri rdf:resource="http://rdaregistry.info/Elements/a/P50339"/>
+      <sinopia:hasPropertyUri rdf:resource="http://rdaregistry.info/Elements/a/P50339"/>
+      <sinopia:hasPropertyUri rdf:resource="http://rdaregistry.info/Elements/a/P50306"/>
+      <sinopia:hasPropertyUri rdf:resource="http://rdaregistry.info/Elements/a/P50306"/>
+      <sinopia:hasPropertyUri rdf:resource="http://rdaregistry.info/Elements/a/P50307"/>
+      <sinopia:hasPropertyUri rdf:resource="http://rdaregistry.info/Elements/a/P50307"/>
+      <sinopia:hasPropertyUri rdf:resource="http://rdaregistry.info/Elements/a/P50305"/>
+      <sinopia:hasPropertyUri rdf:resource="http://rdaregistry.info/Elements/a/P50305"/>
+      <sinopia:hasPropertyUri rdf:resource="http://rdaregistry.info/Elements/a/P50340"/>
+      <sinopia:hasPropertyUri rdf:resource="http://rdaregistry.info/Elements/a/P50340"/>
+      <sinopia:hasPropertyUri rdf:resource="http://rdaregistry.info/Elements/a/P50308"/>
+      <sinopia:hasPropertyUri rdf:resource="http://rdaregistry.info/Elements/a/P50308"/>
+      <sinopia:hasPropertyUri rdf:resource="http://rdaregistry.info/Elements/a/P50360"/>
+      <sinopia:hasPropertyUri rdf:resource="http://rdaregistry.info/Elements/a/P50360"/>
+      <sinopia:hasPropertyUri rdf:resource="http://rdaregistry.info/Elements/a/P50310"/>
+      <sinopia:hasPropertyUri rdf:resource="http://rdaregistry.info/Elements/a/P50310"/>
+   </set>
+   <set set_name="rdan_p80k">
+      <sinopia:hasPropertyUri rdf:resource="http://rdaregistry.info/Elements/n/P80007"/>
+      <sinopia:hasPropertyUri rdf:resource="http://rdaregistry.info/Elements/n/P80041"/>
+      <sinopia:hasPropertyUri rdf:resource="http://rdaregistry.info/Elements/n/P80041"/>
+   </set>
+   <set set_name="rdap_p70k">
+      <sinopia:hasPropertyUri rdf:resource="http://rdaregistry.info/Elements/p/P70053"/>
+      <sinopia:hasPropertyUri rdf:resource="http://rdaregistry.info/Elements/p/P70013"/>
+      <sinopia:hasPropertyUri rdf:resource="http://rdaregistry.info/Elements/p/P70013"/>
+   </set>
+   <set set_name="rdat_p70k">
+      <sinopia:hasPropertyUri rdf:resource="http://rdaregistry.info/Elements/t/P70006"/>
+      <sinopia:hasPropertyUri rdf:resource="http://rdaregistry.info/Elements/t/P70052"/>
+      <sinopia:hasPropertyUri rdf:resource="http://rdaregistry.info/Elements/t/P70052"/>
+      <sinopia:hasPropertyUri rdf:resource="http://rdaregistry.info/Elements/t/P70013"/>
+      <sinopia:hasPropertyUri rdf:resource="http://rdaregistry.info/Elements/t/P70013"/>
+      <sinopia:hasPropertyUri rdf:resource="http://rdaregistry.info/Elements/t/P70012"/>
+      <sinopia:hasPropertyUri rdf:resource="http://rdaregistry.info/Elements/t/P70012"/>
+   </set>
+</results>

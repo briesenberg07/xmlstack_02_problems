@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<root xmlns="https://briesenberg07.github.io/xml_stack/"
+      xmlns:mapstor="https://uwlib-cams.github.io/map_storage/xsd/"
+      xmlns:math="http://www.w3.org/2005/xpath-functions/math"
+      xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+      xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+      xmlns:reg="http://metadataregistry.org/uri/profile/regap/"
+      xmlns:sinopia="http://sinopia.io/vocabulary/"
+      xmlns:xs="http://www.w3.org/2001/XMLSchema"/>
