@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<for_output>
+    <output>
+        <match_01>A</match_01>
+        <match_02>B</match_02>
+        <match_03>C</match_03>
+    </output>
+    <output>
+        <match_01>C</match_01>
+        <match_02>B</match_02>
+        <match_03>A</match_03>
+    </output>
+    <output>
+        <match_01>A</match_01>
+        <match_02>A</match_02>
+        <match_03>A</match_03>
+    </output>
+</for_output>
