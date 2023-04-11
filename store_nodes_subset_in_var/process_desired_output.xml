@@ -7,7 +7,7 @@
       <implementations>1</implementations>
       <ref>
          <prop id="001">
-            <label xml:lang=""/>
+            <label xml:lang="en">creator</label>
             <implementation>
                <match_01>A</match_01>
                <match_02>B</match_02>
@@ -17,7 +17,7 @@
             </implementation>
          </prop>
          <prop id="002">
-            <label xml:lang=""/>
+            <label xml:lang="en">date</label>
             <implementation>
                <match_01>A</match_01>
                <match_02>B</match_02>
@@ -35,7 +35,7 @@
       <implementations>1</implementations>
       <ref>
          <prop id="002">
-            <label xml:lang=""/>
+            <label xml:lang="en">date</label>
             <implementation>
                <match_01>C</match_01>
                <match_02>B</match_02>
@@ -45,7 +45,7 @@
             </implementation>
          </prop>
          <prop id="001">
-            <label xml:lang=""/>
+            <label xml:lang="en">creator</label>
             <implementation>
                <match_01>C</match_01>
                <match_02>B</match_02>
@@ -61,7 +61,7 @@
       <implementations>1</implementations>
       <ref>
          <prop id="003">
-            <label xml:lang=""/>
+            <label xml:lang="en">publisher</label>
             <implementation>
                <match_01>A</match_01>
                <match_02>A</match_02>

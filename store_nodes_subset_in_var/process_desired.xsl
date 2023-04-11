@@ -29,7 +29,7 @@
                                 [match_03 = $threematch]
                                 /order"/>
                             <prop id="{@id}">
-                                <label xml:lang="{@xml:lang}"/>
+                                <label xml:lang="{label/@xml:lang}">{label}</label>
                                 <xsl:copy-of select="
                                     implementation
                                     [match_01 = $onematch]
