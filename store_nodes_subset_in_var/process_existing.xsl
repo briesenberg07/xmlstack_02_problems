@@ -2,8 +2,9 @@
 <xsl:stylesheet xmlns:xsl="http://www.w3.org/1999/XSL/Transform"
     xmlns:xs="http://www.w3.org/2001/XMLSchema" exclude-result-prefixes="xs" expand-text="1"
     version="3.0">
+    
     <xsl:output method="xml" indent="1"/>
-
+    
     <xsl:template match="/">
         <xsl:result-document href="process_existing_output.xml">
             <output>
@@ -43,4 +44,5 @@
             </output>
         </xsl:result-document>
     </xsl:template>
+    
 </xsl:stylesheet>

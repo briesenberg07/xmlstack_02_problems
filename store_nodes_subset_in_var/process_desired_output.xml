@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<output>
+   <output_set id="ABC">
+      <prop id="001"/>
+      <implementations>1</implementations>
+      <prop id="002"/>
+      <implementations>1</implementations>
+      <ref>
+         <prop id="001">
+            <label xml:lang=""/>
+            <implementation>
+               <match_01>A</match_01>
+               <match_02>B</match_02>
+               <match_03>C</match_03>
+               <order>1</order>
+               <value_type>literal</value_type>
+            </implementation>
+         </prop>
+         <prop id="002">
+            <label xml:lang=""/>
+            <implementation>
+               <match_01>A</match_01>
+               <match_02>B</match_02>
+               <match_03>C</match_03>
+               <order>2</order>
+               <value_type>literal</value_type>
+            </implementation>
+         </prop>
+      </ref>
+   </output_set>
+   <output_set id="CBA">
+      <prop id="002"/>
+      <implementations>1</implementations>
+      <prop id="001"/>
+      <implementations>1</implementations>
+      <ref>
+         <prop id="002">
+            <label xml:lang=""/>
+            <implementation>
+               <match_01>C</match_01>
+               <match_02>B</match_02>
+               <match_03>A</match_03>
+               <order>1</order>
+               <value_type>resource</value_type>
+            </implementation>
+         </prop>
+         <prop id="001">
+            <label xml:lang=""/>
+            <implementation>
+               <match_01>C</match_01>
+               <match_02>B</match_02>
+               <match_03>A</match_03>
+               <order>3</order>
+               <value_type>resource</value_type>
+            </implementation>
+         </prop>
+      </ref>
+   </output_set>
+   <output_set id="AAA">
+      <prop id="003"/>
+      <implementations>1</implementations>
+      <ref>
+         <prop id="003">
+            <label xml:lang=""/>
+            <implementation>
+               <match_01>A</match_01>
+               <match_02>A</match_02>
+               <match_03>A</match_03>
+               <order>1</order>
+               <value_type>bnode</value_type>
+            </implementation>
+         </prop>
+      </ref>
+   </output_set>
+</output>
