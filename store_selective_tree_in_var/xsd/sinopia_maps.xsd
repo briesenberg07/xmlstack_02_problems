@@ -1,0 +1,101 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xs:schema targetNamespace="https://uwlib-cams.github.io/sinopia_maps/xsd/"
+    xmlns="https://uwlib-cams.github.io/sinopia_maps/xsd/"
+    xmlns:uwmaps="https://uwlib-cams.github.io/map_storage/xsd/"
+    xmlns:xs="http://www.w3.org/2001/XMLSchema"
+    xmlns:vc="http://www.w3.org/2007/XMLSchema-versioning" 
+    elementFormDefault="qualified"
+    vc:minVersion="1.1">
+    
+    <!-- IMPORT -->
+    <xs:import namespace="http://www.w3.org/XML/1998/namespace"
+        schemaLocation="http://www.w3.org/2001/03/xml.xsd"/>
+    <xs:import namespace="http://www.w3.org/2001/XMLSchema"
+        schemaLocation="https://www.w3.org/2001/XMLSchema.xsd"/>
+    <xs:import namespace="https://uwlib-cams.github.io/map_storage/xsd/" 
+        schemaLocation="https://uwlib-cams.github.io/map_storage/xsd/prop_set.xsd"/>
+    
+    <!-- INCLUDE -->
+    <xs:include schemaLocation="uwsinopia.xsd"/>
+    <xs:include schemaLocation="resources.xsd"/>
+    <xs:include schemaLocation="formats.xsd"/>
+    <xs:include schemaLocation="users.xsd"/>
+    
+    <!-- ***** sinopia_maps***** -->
+    <xs:element name="sinopia_maps" type="sinopia_maps_type">
+        <xs:annotation>
+            <xs:documentation>Root element of the `sinopia_maps.xml` instance</xs:documentation>
+        </xs:annotation>
+    </xs:element>
+    
+    <xs:complexType name="sinopia_maps_type">
+        <!-- may wish to add a mechanism for assembling RTs into a multi-entity profile or description set??  -->
+        <xs:sequence>
+            <xs:element name="rts" type="rts_type" minOccurs="0" maxOccurs="unbounded"/>
+        </xs:sequence>
+    </xs:complexType>
+    
+    <!-- **** rts **** -->
+    <xs:complexType name="rts_type">
+        <xs:annotation>
+            <xs:documentation>No text content; contains multiple `rt` elements</xs:documentation>
+        </xs:annotation>
+        <xs:sequence>
+            <xs:element name="rt" type="rt_type" minOccurs="1" maxOccurs="unbounded"/>
+        </xs:sequence>
+    </xs:complexType>
+    
+    <xs:complexType name="rt_type">
+        <xs:annotation>
+            <xs:documentation>No text content; contains resource template information</xs:documentation>
+            <xs:documentation>Child element content from `institution`, `resource`, `format`, and `user` comprises resource template ID</xs:documentation>
+        </xs:annotation>
+        <xs:sequence>
+            <xs:element name="institution" type="institution_type" minOccurs="1" maxOccurs="1"/>
+            <xs:element name="resource" type="resource_label_type" minOccurs="1" maxOccurs="1"/>
+            <!-- RE: suppressible: suppressible RTs must not contain any more than one PT! will produce error in sinopia -->
+            <xs:element name="suppressible" type="xs:boolean" minOccurs="0" maxOccurs="1"/>
+            <!-- may want to further constrain values for optional_class later... -->
+            <xs:element name="optional_class" type="xs:anyURI" minOccurs="0" maxOccurs="unbounded">
+                <xs:annotation>
+                    <xs:documentation>To provide catalogers the option to assign an optional class the the resource which the template will describe, enter a class IRI as text content for the `optional_class` element.</xs:documentation>
+                </xs:annotation>
+            </xs:element>
+            <xs:element name="format" type="format_type" minOccurs="1" maxOccurs="1"/>
+            <xs:element name="user" type="user_type" minOccurs="1" maxOccurs="1"/>
+            <xs:element name="author" type="author_type" minOccurs="1" maxOccurs="unbounded"/>
+            <xs:element name="rt_remark" type="rt_remark_type" minOccurs="0" maxOccurs="1"/>
+        </xs:sequence>
+        <xs:attribute name="output_load"/>
+    </xs:complexType>
+    
+    <xs:simpleType name="institution_type">
+        <xs:annotation>
+            <xs:documentation/>
+        </xs:annotation>
+        <xs:restriction base="xs:string">
+            <xs:enumeration value="WAU"/>
+        </xs:restriction>
+    </xs:simpleType>
+    
+    <xs:simpleType name="author_type">
+        <!-- tried some annotation, shows up in the editor on mouseover in the sinopia_maps.xml instance -->
+        <xs:annotation>
+            <xs:documentation>Provide the name and/or email address of an author (or authors, in repeating elements) for the resource template.</xs:documentation>
+        </xs:annotation>
+        <xs:restriction base="xs:string"/>
+    </xs:simpleType>
+    
+    <xs:complexType name="rt_remark_type">
+        <xs:simpleContent>
+            <xs:extension base="xs:string">
+                <xs:attribute ref="xml:lang" use="required"/>
+            </xs:extension>
+        </xs:simpleContent>
+    </xs:complexType>
+    
+    <xs:simpleType name="output_load">
+        <xs:restriction base="xs:boolean"/>
+    </xs:simpleType>
+    
+</xs:schema>
