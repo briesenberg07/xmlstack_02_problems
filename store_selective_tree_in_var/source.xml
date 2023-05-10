@@ -76,6 +76,22 @@
       <prop_iri iri="http://rdaregistry.info/Elements/x/P00020"/>
       <prop_label xml:lang="en">has authorized access point for RDA entity</prop_label>
       <prop_domain iri="http://rdaregistry.info/Elements/c/C10013"/>
+      <sinopia>
+         <uwsinopia:toolkit url="http://toolkit_url_goes_here"/>
+         <uwsinopia:guidance_set>
+            <uwsinopia:general rt_id="UWSINOPIA:WAU:rdaEntity:test:ries07">
+               <uwsinopia:p>Here's the <uwsinopia:strong>general</uwsinopia:strong> guidance.</uwsinopia:p>
+            </uwsinopia:general>
+         </uwsinopia:guidance_set>
+         <uwsinopia:implementation_set localid_implementation_set="localid_goes_here_001">
+            <uwsinopia:institution>WAU</uwsinopia:institution>
+            <uwsinopia:resource>rdaEntity</uwsinopia:resource>
+            <uwsinopia:format>test</uwsinopia:format>
+            <uwsinopia:user>ries07</uwsinopia:user>
+            <uwsinopia:form_order>0.05</uwsinopia:form_order>
+            <uwsinopia:literal_pt/>
+         </uwsinopia:implementation_set>
+      </sinopia>
    </prop>
    <prop localid_prop="uwmaps_rdax_p00k_xP00029">
       <prop_iri iri="http://rdaregistry.info/Elements/x/P00029"/>

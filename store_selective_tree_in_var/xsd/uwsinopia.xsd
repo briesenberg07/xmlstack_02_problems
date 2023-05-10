@@ -11,7 +11,7 @@
    <xs:import namespace="http://www.w3.org/2001/XMLSchema"
       schemaLocation="https://www.w3.org/2001/XMLSchema.xsd"/>
    <xs:import namespace="https://uwlib-cams.github.io/map_storage/xsd/"
-      schemaLocation="https://uwlib-cams.github.io/map_storage/xsd/prop_set.xsd"/>
+      schemaLocation="prop_set.xsd"/>
    <!-- INCLUDE -->
    <xs:include schemaLocation="sinopia_maps.xsd"/>
    <xs:include schemaLocation="resources.xsd"/>
