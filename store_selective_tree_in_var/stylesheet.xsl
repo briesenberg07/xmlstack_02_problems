@@ -6,7 +6,7 @@
     xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
     xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#" exclude-result-prefixes="xs" version="3.0"
     expand-text="true">
-    
+
     <xsl:output method="xml" indent="yes"/>
 
     <xsl:template match="/">
@@ -14,8 +14,8 @@
         <xsl:variable name="resource" select="'rdaEntity'"/>
         <xsl:variable name="format" select="'test'"/>
         <xsl:variable name="user" select="'ries07'"/>
-        <xsl:variable name="rt_id">{concat('UWSINOPIA:', 
-            $institution, ':', $resource, ':', $format, ':', $user)}</xsl:variable>
+        <xsl:variable name="rt_id">{concat('UWSINOPIA:', $institution, ':', $resource, ':', $format,
+            ':', $user)}</xsl:variable>
         <xsl:variable name="prop_info" as="node()*">
             <xsl:for-each select="
                     document('source.xml')/uwmaps:prop_set/uwmaps:prop
@@ -67,73 +67,6 @@
                                         </xsl:choose>
                                     </xsl:element>
                                 </xsl:if>
-                                <!-- might not be working as I think it is -->
-                                <xsl:if
-                                    test="uwmaps:sinopia/uwsinopia:guidance_set/uwsinopia:entity_boundary">
-                                    <xsl:copy-of
-                                        select="uwmaps:sinopia/uwsinopia:guidance_set/uwsinopia:entity_boundary"
-                                    />
-                                </xsl:if>
-                                <!-- 100% not working from here down -->
-                                <xsl:if
-                                    test="uwmaps:sinopia/uwsinopia:guidance_set/uwsinopia:recording_method">
-                                    <xsl:choose>
-                                        <xsl:when test="
-                                                uwmaps:sinopia/uwsinopia:guidance_set/uwsinopia:recording_method
-                                                [@rt_id = $rt_id]">
-                                            <xsl:copy-of select="
-                                                    uwmaps:sinopia/uwsinopia:guidance_set
-                                                    /uwsinopia:recording_method[@rt_id = $rt_id]"
-                                            />
-                                        </xsl:when>
-                                        <xsl:otherwise>
-                                            <xsl:copy-of select="
-                                                    uwmaps:sinopia/uwsinopia:guidance_set
-                                                    /uwsinopia:recording_method[@rt_id = 'default']"
-                                            />
-                                        </xsl:otherwise>
-                                    </xsl:choose>
-                                </xsl:if>
-                                <xsl:if test="uwmaps:sinopia/uwsinopia:guidance_set/uwsinopia:ses">
-                                    <xsl:choose>
-                                        <xsl:when test="
-                                                uwmaps:sinopia/uwsinopia:guidance_set/uwsinopia:ses
-                                                [@rt_id = $rt_id]">
-                                            <xsl:copy-of select="
-                                                    uwmaps:sinopia/uwsinopia:guidance_set
-                                                    /uwsinopia:ses[@rt_id = $rt_id]"
-                                            />
-                                        </xsl:when>
-                                        <xsl:otherwise>
-                                            <xsl:copy-of select="
-                                                    uwmaps:sinopia/uwsinopia:guidance_set
-                                                    /uwsinopia:ses[@rt_id = 'default']"
-                                            />
-                                        </xsl:otherwise>
-                                    </xsl:choose>
-                                </xsl:if>
-                                <xsl:if
-                                    test="uwmaps:sinopia/uwsinopia:guidance_set/uwsinopia:transcription_standard">
-                                    <xsl:choose>
-                                        <xsl:when test="
-                                                uwmaps:sinopia/uwsinopia:guidance_set/uwsinopia:transcription_standard
-                                                [@rt_id = $rt_id]">
-                                            <xsl:copy-of select="
-                                                    uwmaps:sinopia/uwsinopia:guidance_set/uwsinopia:transcription_standard
-                                                    [@rt_id = $rt_id]"
-                                            />
-                                        </xsl:when>
-                                        <xsl:otherwise>
-                                            <xsl:copy-of select="
-                                                    uwmaps:sinopia/uwsinopia:guidance_set/uwsinopia:transcription_standard
-                                                    [@rt_id = 'default']"
-                                            />
-                                        </xsl:otherwise>
-                                    </xsl:choose>
-                                </xsl:if>
-                                <!-- options -->
-                                <!-- mgds -->
-                                <!-- examples -->
                             </xsl:element>
                         </xsl:if>
                         <xsl:copy-of select="
