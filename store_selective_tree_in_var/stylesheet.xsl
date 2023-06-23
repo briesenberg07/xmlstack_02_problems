@@ -7,6 +7,7 @@
     xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#" exclude-result-prefixes="xs" version="3.0"
     expand-text="true">
 
+    <!--<xsl:output method="html" indent="yes"/>-->
     <xsl:output method="xml" indent="yes"/>
 
     <xsl:template match="/">
@@ -43,23 +44,21 @@
                                 >{uwmaps:sinopia/uwsinopia:toolkit/@url}</xsl:attribute>
                         </xsl:element>
                         <xsl:if test="uwmaps:sinopia/uwsinopia:guidance_set">
-                            <xsl:element name="guidance_set"
-                                namespace="https://uwlib-cams.github.io/sinopia_maps/xsd/">
+                            <xsl:element name="guidance_set">
                                 <xsl:if
                                     test="uwmaps:sinopia/uwsinopia:guidance_set/uwsinopia:general">
-                                    <xsl:element name="general"
-                                        namespace="https://uwlib-cams.github.io/sinopia_maps/xsd/">
+                                    <xsl:element name="general">
                                         <xsl:choose>
                                             <xsl:when test="
                                                     uwmaps:sinopia/uwsinopia:guidance_set/uwsinopia:general
                                                     [@rt_id = $rt_id]">
-                                                <xsl:copy-of select="
+                                                <xsl:copy-of copy-namespaces="no" select="
                                                         uwmaps:sinopia/uwsinopia:guidance_set
                                                         /uwsinopia:general[@rt_id = $rt_id]/node()"
                                                 />
                                             </xsl:when>
                                             <xsl:otherwise>
-                                                <xsl:copy-of select="
+                                                <xsl:copy-of copy-namespaces="no" select="
                                                         uwmaps:sinopia/uwsinopia:guidance_set
                                                         /uwsinopia:general[@rt_id = 'default']/node()"
                                                 />
