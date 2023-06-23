@@ -11,6 +11,7 @@
   <xsl:result-document href="test_py2xsl_out.xml">
     <output_a_param>
       <xsl:value-of select="$word"/>
+      <xsl:message expand-text="yes">I'm sending a message! I'm referencing a param! The param value: {$word}</xsl:message>
     </output_a_param>
     </xsl:result-document>
     </xsl:template>
