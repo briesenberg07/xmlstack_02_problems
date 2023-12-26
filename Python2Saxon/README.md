@@ -14,3 +14,6 @@ Storing basic Python syntax needed to run a Saxon transformation here, including
 - [SAXON: The XSLT and XQuery processor](http://saxon.sourceforge.net/): Saxon HE is a free version, and sinopia_maps stylesheets may be run using it; latest version at time of writing is [Saxon-HE 11](http://saxon.sourceforge.net/#F11HE)
 - Python [os library](https://docs.python.org/3.8/library/os.html)\* (\*link for v3.8): Using [os.system](https://docs.python.org/3.8/library/os.html#os.system) to pass a command to Saxon
 - Saxonica documentation > [Running XSLT from the Command Line](https://www.saxonica.com/documentation10/index.html#!using-xsl/commandline): This provides the needed command syntax 
+
+## TO DO
+- Use [SaxonC: XML document processing for C/C++, PHP and **Python**](https://www.saxonica.com/saxon-c/index.xml)!!!
