@@ -5,15 +5,16 @@
     exclude-result-prefixes="xs math"
     version="3.0">
     
-    <!-- assemble URLs for XML file at before/after commit-->
+    <!-- assemble URLs for XML file at before/after commits -->
     <xsl:variable name="raw_file_url_01" select="'https://github.com/uwlib-mig/critcat/raw/'"/>
     <xsl:variable name="before_sha" select="'6d42ca93fe04fab025626e931640e243166bd77d'"/>
     <xsl:variable name="after_sha" select="'e41f0467527c1a28a3b9b5d6dc52490f1cef79ff'"/>
     <xsl:variable name="raw_file_url_02"
         select="'/Past_Projects/Harriman/CONTENTdm_custom_harriman.xml'"/>
     
-    <!-- assemble CONTENTdm item URLs? -->
-    <xsl:variable name="item_url_prefix">https://digitalcollections.lib.washington.edu/digital/collection/harriman/id/</xsl:variable>
+    <!-- assemble CONTENTdm item URLs -->
+    <xsl:variable name="item_url_prefix"
+        select="'https://digitalcollections.lib.washington.edu/digital/collection/harriman/id/'"/>
     
     <!-- TO DO: iterate through target field(s) for diff -->
     <xsl:variable name="target_fields">
